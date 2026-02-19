@@ -151,7 +151,7 @@
     <div id="backArrow">←</div>
 
     <!-- Srdce uprostřed -->
-    <div id="centerHeart">❤️</div>
+    <div id="centerHeart">💓</div>
 
     <div class="cats">
         <img src="kocka.png" class="cat-image cat-left">
@@ -164,7 +164,8 @@
 function createHeart() {
     const heart = document.createElement("div");
     heart.classList.add("heart");
-    heart.innerHTML = "❤️";
+    const shapes = ["❤️","❤️","❤️","💖","💗","❤️","💖","💗","💓","💞","💕","💘","💝","💟","✨","🌸","💫","🌟"]; 
+    heart.innerHTML = shapes[Math.floor(Math.random() * shapes.length)];
     heart.style.left = Math.random() * 100 + "vw";
     const size = 40 + Math.random() * 80;
     heart.style.fontSize = size + "px";
@@ -218,3 +219,4 @@ document.getElementById("backArrow").onclick = function() {
 
 </body>
 </html>
+
