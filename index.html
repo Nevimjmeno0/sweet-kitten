@@ -122,6 +122,11 @@
         z-index: 20;
     }
 
+    #modal { 
+        z-index: 99999; /* nejvyšší vrstva */ 
+        position: fixed; 
+    }
+
     /* Jemné pohupování */
     @keyframes sway {
         0% { transform: translateY(0) rotate(0deg); }
@@ -219,8 +224,3 @@ document.getElementById("backArrow").onclick = function() {
 
 </body>
 </html>
-
-
-
-
-
